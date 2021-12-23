@@ -1,0 +1,9 @@
+[Aviator TRACE]          <Decimal, 1.01> / <Long, 5> => <Decimal, 0.202>
+[Aviator TRACE] Func   : datedif(<JavaType, issueDate, 2020-01-01, java.time.LocalDate>,<JavaType, currentDate, 2022-05-15, java.time.LocalDate>,<String, Y>)
+[Aviator TRACE] Result : <Long, 2>
+[Aviator TRACE]          <Long, 2> + <Long, 1> => <Long, 3>
+[Aviator TRACE] Func   : min(<Long, 5>,<Long, 3>)
+[Aviator TRACE] Result : <Decimal, 3>
+[Aviator TRACE]          <Decimal, 0.202> * <Decimal, 3> => <Decimal, 0.606>
+[Aviator TRACE]          <Decimal, 0.606> * <JavaType, sums, 100, java.lang.Integer> => <Decimal, 60.600>
+[Aviator TRACE] Result : 60.600
