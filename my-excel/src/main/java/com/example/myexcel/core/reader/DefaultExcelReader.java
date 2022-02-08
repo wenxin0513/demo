@@ -14,19 +14,19 @@
  */
 package com.example.myexcel.core.reader;
 
-import com.cntaiping.tplhk.reins.common.excel.core.ReadContext;
-import com.cntaiping.tplhk.reins.common.excel.core.RowWrapper;
-import com.cntaiping.tplhk.reins.common.excel.core.annotation.ExcelColumn;
-import com.cntaiping.tplhk.reins.common.excel.core.builder.AbstractExcelFactory;
-import com.cntaiping.tplhk.reins.common.excel.core.constant.Constants;
-import com.cntaiping.tplhk.reins.common.excel.core.converter.ConverterWarpper;
-import com.cntaiping.tplhk.reins.common.excel.core.function.CallBackFunction;
-import com.cntaiping.tplhk.reins.common.excel.core.function.DefaultExceptionFunction;
-import com.cntaiping.tplhk.reins.common.excel.core.function.ExceptionFunction;
-import com.cntaiping.tplhk.reins.common.excel.core.parser.ExcelHandler;
-import com.cntaiping.tplhk.reins.common.excel.exception.ExcelReadException;
-import com.cntaiping.tplhk.reins.common.excel.exception.SaxReadException;
-import com.cntaiping.tplhk.reins.common.excel.utils.ReflectUtil;
+import com.example.myexcel.core.ReadContext;
+import com.example.myexcel.core.RowWrapper;
+import com.example.myexcel.core.annotation.ExcelColumn;
+import com.example.myexcel.core.builder.AbstractExcelFactory;
+import com.example.myexcel.core.constant.Constants;
+import com.example.myexcel.core.converter.ConverterWarpper;
+import com.example.myexcel.core.function.CallBackFunction;
+import com.example.myexcel.core.function.DefaultExceptionFunction;
+import com.example.myexcel.core.function.ExceptionFunction;
+import com.example.myexcel.core.parser.ExcelHandler;
+import com.example.myexcel.exception.ExcelReadException;
+import com.example.myexcel.exception.SaxReadException;
+import com.example.myexcel.utils.ReflectUtil;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import lombok.NonNull;

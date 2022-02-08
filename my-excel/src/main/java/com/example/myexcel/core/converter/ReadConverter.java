@@ -14,7 +14,8 @@
  */
 package com.example.myexcel.core.converter;
 
-import com.cntaiping.tplhk.reins.common.excel.exception.ExcelReadConvertException;
+
+import com.example.myexcel.exception.ExcelReadConvertException;
 
 import java.lang.reflect.Field;
 

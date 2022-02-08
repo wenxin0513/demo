@@ -15,13 +15,15 @@
  */
 package com.example.myexcel.core.builder;
 
-import com.cntaiping.tplhk.reins.common.excel.core.WorkbookType;
-import com.cntaiping.tplhk.reins.common.excel.core.constant.Constants;
-import com.cntaiping.tplhk.reins.common.excel.core.parser.Td;
-import com.cntaiping.tplhk.reins.common.excel.core.parser.Tr;
-import com.cntaiping.tplhk.reins.common.excel.exception.ExcelBuildException;
-import com.cntaiping.tplhk.reins.common.excel.utils.FileExportUtil;
-import com.cntaiping.tplhk.reins.common.excel.utils.TempFileOperator;
+
+import com.example.myexcel.core.WorkbookType;
+import com.example.myexcel.core.constant.Constants;
+import com.example.myexcel.core.parser.Table;
+import com.example.myexcel.core.parser.Td;
+import com.example.myexcel.core.parser.Tr;
+import com.example.myexcel.exception.ExcelBuildException;
+import com.example.myexcel.utils.FileExportUtil;
+import com.example.myexcel.utils.TempFileOperator;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import lombok.extern.slf4j.Slf4j;

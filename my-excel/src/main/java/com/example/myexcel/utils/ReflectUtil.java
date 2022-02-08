@@ -15,9 +15,9 @@
  */
 package com.example.myexcel.utils;
 
-import com.cntaiping.tplhk.reins.common.excel.core.annotation.ExcelColumn;
-import com.cntaiping.tplhk.reins.common.excel.core.cache.WeakCache;
-import com.cntaiping.tplhk.reins.common.excel.core.reflect.ClassFieldContainer;
+import com.example.myexcel.core.annotation.ExcelColumn;
+import com.example.myexcel.core.cache.WeakCache;
+import com.example.myexcel.core.reflect.ClassFieldContainer;
 import com.google.common.collect.Maps;
 import lombok.experimental.UtilityClass;
 

@@ -14,19 +14,19 @@
  */
 package com.example.myexcel.core.reader;
 
-import com.cntaiping.tplhk.reins.common.excel.core.ReadContext;
-import com.cntaiping.tplhk.reins.common.excel.core.Row;
-import com.cntaiping.tplhk.reins.common.excel.core.constant.Constants;
-import com.cntaiping.tplhk.reins.common.excel.core.function.CallBackFunction;
-import com.cntaiping.tplhk.reins.common.excel.core.function.DefaultExceptionFunction;
-import com.cntaiping.tplhk.reins.common.excel.core.function.ExceptionFunction;
-import com.cntaiping.tplhk.reins.common.excel.core.reader.handler.AbstractReadHandler;
-import com.cntaiping.tplhk.reins.common.excel.core.reader.handler.CsvReadHandler;
-import com.cntaiping.tplhk.reins.common.excel.core.reader.handler.HSSFSaxReadHandler;
-import com.cntaiping.tplhk.reins.common.excel.core.reader.handler.XSSFSaxReadHandler;
-import com.cntaiping.tplhk.reins.common.excel.exception.ExcelReadException;
-import com.cntaiping.tplhk.reins.common.excel.exception.SaxReadException;
-import com.cntaiping.tplhk.reins.common.excel.exception.StopReadException;
+import com.example.myexcel.core.ReadContext;
+import com.example.myexcel.core.Row;
+import com.example.myexcel.core.constant.Constants;
+import com.example.myexcel.core.function.CallBackFunction;
+import com.example.myexcel.core.function.DefaultExceptionFunction;
+import com.example.myexcel.core.function.ExceptionFunction;
+import com.example.myexcel.core.reader.handler.AbstractReadHandler;
+import com.example.myexcel.core.reader.handler.CsvReadHandler;
+import com.example.myexcel.core.reader.handler.HSSFSaxReadHandler;
+import com.example.myexcel.core.reader.handler.XSSFSaxReadHandler;
+import com.example.myexcel.exception.ExcelReadException;
+import com.example.myexcel.exception.SaxReadException;
+import com.example.myexcel.exception.StopReadException;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NonNull;
@@ -75,6 +75,7 @@ public class SaxExcelReader<T> {
     private static final int DEFAULT_SHEET_INDEX = 0;
 
     private ReadConfig<T> readConfig = new ReadConfig<>(DEFAULT_SHEET_INDEX);
+
 
     private AbstractReadHandler<T> readHandler;
 
@@ -189,7 +190,7 @@ public class SaxExcelReader<T> {
                     doReadXls(is);
                     break;
                 case OOXML:
-                    readHandler = new XSSFSaxReadHandler<>(wkStream, readConfig);
+                    readHandler = new XSSFSaxReadHandler<T>(wkStream, readConfig);
                     try (OPCPackage p = OPCPackage.open(is)) {
                         process(p);
                     }
@@ -216,7 +217,7 @@ public class SaxExcelReader<T> {
 
     private void doReadXlsx(File file) {
         try {
-            readHandler = new XSSFSaxReadHandler<>(Files.newInputStream(file.toPath()), readConfig);
+            readHandler = new XSSFSaxReadHandler<T>(Files.newInputStream(file.toPath()), readConfig);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -241,7 +242,7 @@ public class SaxExcelReader<T> {
 
     private void doReadXls(@NonNull InputStream fileInputStream) {
         try {
-            readHandler = new HSSFSaxReadHandler<>(fileInputStream, readConfig);
+            readHandler = new HSSFSaxReadHandler<T>(fileInputStream, readConfig);
             ((HSSFSaxReadHandler) readHandler).process();
         } catch (StopReadException e) {
             // do nothing

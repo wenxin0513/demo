@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Import;
 
 @Configuration
 @EnableBatchProcessing
-@Import(DataSourceConfiguration.class)
+
 public class GoodsJob extends BaseJob {
 
     @Autowired

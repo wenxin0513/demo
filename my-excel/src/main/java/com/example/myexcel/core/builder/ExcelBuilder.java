@@ -14,11 +14,10 @@
  * limitations under the License.
  */
 package com.example.myexcel.core.builder;
-
-import com.cntaiping.tplhk.reins.common.excel.core.FreezePane;
-import com.cntaiping.tplhk.reins.common.excel.core.WorkbookType;
-import com.cntaiping.tplhk.reins.common.excel.core.strategy.AutoWidthStrategy;
-import com.cntaiping.tplhk.reins.common.excel.core.strategy.WidthStrategy;
+import com.example.myexcel.core.FreezePane;
+import com.example.myexcel.core.WorkbookType;
+import com.example.myexcel.core.strategy.AutoWidthStrategy;
+import com.example.myexcel.core.strategy.WidthStrategy;
 import org.apache.poi.ss.usermodel.Workbook;
 
 import java.io.Closeable;

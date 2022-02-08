@@ -15,8 +15,8 @@
  */
 package com.example.myexcel.utils;
 
-import com.cntaiping.tplhk.reins.common.excel.core.cache.Cache;
-import com.cntaiping.tplhk.reins.common.excel.core.cache.WeakCache;
+import com.example.myexcel.core.cache.Cache;
+import com.example.myexcel.core.cache.WeakCache;
 import lombok.experimental.UtilityClass;
 
 import java.util.function.IntSupplier;

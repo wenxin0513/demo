@@ -1,7 +1,7 @@
 package com.example.myexcel.core.function;
 
-import com.cntaiping.tplhk.reins.common.excel.core.ReadContext;
-import com.cntaiping.tplhk.reins.common.excel.exception.ExcelReadException;
+import com.example.myexcel.core.ReadContext;
+import com.example.myexcel.exception.ExcelReadException;
 
 import java.util.function.BiFunction;
 

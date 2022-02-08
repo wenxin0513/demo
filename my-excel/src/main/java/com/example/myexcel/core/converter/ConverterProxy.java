@@ -1,8 +1,7 @@
 package com.example.myexcel.core.converter;
-
-import com.cntaiping.tplhk.reins.common.excel.core.container.Pair;
-import com.cntaiping.tplhk.reins.common.excel.core.converter.reader.*;
-import com.cntaiping.tplhk.reins.common.excel.core.converter.writer.*;
+import com.example.myexcel.core.container.Pair;
+import com.example.myexcel.core.converter.reader.*;
+import com.example.myexcel.core.converter.writer.*;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import org.springframework.stereotype.Component;

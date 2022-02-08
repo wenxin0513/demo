@@ -15,7 +15,7 @@
  */
 package com.example.myexcel.utils;
 
-import com.cntaiping.tplhk.reins.common.excel.core.constant.Constants;
+import com.example.myexcel.core.constant.Constants;
 import lombok.experimental.UtilityClass;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.openxml4j.opc.OPCPackage;

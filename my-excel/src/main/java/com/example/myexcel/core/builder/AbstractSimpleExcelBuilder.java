@@ -12,24 +12,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.myexcel.core.builder;
+package com.example.myexcel.core.builder;;
 
-import com.cntaiping.tplhk.reins.common.core.util.ApplicationUtil;
-import com.cntaiping.tplhk.reins.common.excel.core.WorkbookType;
-import com.cntaiping.tplhk.reins.common.excel.core.annotation.ExcelColumn;
-import com.cntaiping.tplhk.reins.common.excel.core.annotation.ExcelTable;
-import com.cntaiping.tplhk.reins.common.excel.core.annotation.ExcludeColumn;
-import com.cntaiping.tplhk.reins.common.excel.core.constant.*;
-import com.cntaiping.tplhk.reins.common.excel.core.container.Pair;
-import com.cntaiping.tplhk.reins.common.excel.core.converter.ConverterWarpper;
-import com.cntaiping.tplhk.reins.common.excel.core.converter.ExcelRepository;
-import com.cntaiping.tplhk.reins.common.excel.core.parser.*;
-import com.cntaiping.tplhk.reins.common.excel.core.reflect.ClassFieldContainer;
-import com.cntaiping.tplhk.reins.common.excel.core.strategy.WidthStrategy;
-import com.cntaiping.tplhk.reins.common.excel.core.style.*;
-import com.cntaiping.tplhk.reins.common.excel.utils.ReflectUtil;
-import com.cntaiping.tplhk.reins.common.excel.utils.StyleUtil;
-import com.cntaiping.tplhk.reins.common.excel.utils.TdUtil;
+import com.example.myexcel.core.WorkbookType;
+import com.example.myexcel.core.annotation.ExcelColumn;
+import com.example.myexcel.core.annotation.ExcelTable;
+import com.example.myexcel.core.annotation.ExcludeColumn;
+import com.example.myexcel.core.constant.*;
+import com.example.myexcel.core.container.Pair;
+import com.example.myexcel.core.converter.ConverterWarpper;
+import com.example.myexcel.core.converter.ExcelRepository;
+import com.example.myexcel.core.parser.*;
+import com.example.myexcel.core.reflect.ClassFieldContainer;
+import com.example.myexcel.core.strategy.WidthStrategy;
+import com.example.myexcel.core.style.*;
+import com.example.myexcel.utils.ApplicationUtil;
+import com.example.myexcel.utils.ReflectUtil;
+import com.example.myexcel.utils.StyleUtil;
+import com.example.myexcel.utils.TdUtil;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import org.apache.commons.lang3.StringUtils;
@@ -302,7 +302,7 @@ abstract class AbstractSimpleExcelBuilder {
             Td td = Td.builder().row(0).col(i).build();
             Pair<? extends Class, ?> pair = contents.get(i);
             Class fieldType = pair.getKey();
-            if (com.cntaiping.tplhk.reins.common.excel.core.constant.File.class.isAssignableFrom(fieldType)) {
+            if (File.class.isAssignableFrom(fieldType)) {
                 td.setFile(pair.getValue() == null ? null : (File) pair.getValue());
             } else {
                 td.setContent(pair.getValue() == null ? null : String.valueOf(pair.getValue()));

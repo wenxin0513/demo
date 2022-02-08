@@ -1,20 +1,17 @@
 package com.example.myexcel.core.function;
 
-import com.cntaiping.tplhk.reins.common.core.jpa.specification.AbstractSpecification;
-import com.cntaiping.tplhk.reins.common.core.lambda.SFunction;
-import com.cntaiping.tplhk.reins.common.core.util.ApplicationUtil;
-import com.cntaiping.tplhk.reins.common.excel.core.ReadContext;
-import com.cntaiping.tplhk.reins.common.excel.core.RowWrapper;
-import com.cntaiping.tplhk.reins.common.excel.core.annotation.ExcelColumn;
-import com.cntaiping.tplhk.reins.common.excel.core.parser.ExcelHandler;
+import com.example.myexcel.core.ReadContext;
+import com.example.myexcel.core.RowWrapper;
+import com.example.myexcel.core.annotation.ExcelColumn;
+import com.example.myexcel.core.lambda.SFunction;
+import com.example.myexcel.core.parser.ExcelHandler;
+import com.example.myexcel.core.specification.AbstractSpecification;
+import com.example.myexcel.utils.ApplicationUtil;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import org.springframework.util.ObjectUtils;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
+
 import java.lang.reflect.Field;
 import java.util.List;
 import java.util.Map;
@@ -122,11 +119,6 @@ public abstract class CallBackFunction<T> extends AbstractSpecification<T> imple
                 .build();
     }
 
-    @Override
-    public Predicate toPredicate(Root<T> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
-        //do nothing
-        return null;
-    }
 
     private void checkExcelColumn(List<ReadContext> readContexts, ReadContext context, ExcelHandler handler) {
         ExcelColumn excelColumn = context.getField().getAnnotation(ExcelColumn.class);

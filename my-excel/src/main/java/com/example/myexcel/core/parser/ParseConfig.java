@@ -14,7 +14,7 @@
  */
 package com.example.myexcel.core.parser;
 
-import com.cntaiping.tplhk.reins.common.excel.core.strategy.WidthStrategy;
+import com.example.myexcel.core.strategy.WidthStrategy;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;

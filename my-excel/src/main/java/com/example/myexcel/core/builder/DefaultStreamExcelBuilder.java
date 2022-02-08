@@ -15,15 +15,16 @@
  */
 package com.example.myexcel.core.builder;
 
-import com.cntaiping.tplhk.reins.common.excel.core.WorkbookType;
-import com.cntaiping.tplhk.reins.common.excel.core.container.Pair;
-import com.cntaiping.tplhk.reins.common.excel.core.parser.Table;
-import com.cntaiping.tplhk.reins.common.excel.core.parser.Title;
-import com.cntaiping.tplhk.reins.common.excel.core.parser.Tr;
-import com.cntaiping.tplhk.reins.common.excel.core.reflect.ClassFieldContainer;
-import com.cntaiping.tplhk.reins.common.excel.core.strategy.AutoWidthStrategy;
-import com.cntaiping.tplhk.reins.common.excel.core.strategy.WidthStrategy;
-import com.cntaiping.tplhk.reins.common.excel.utils.ReflectUtil;
+
+import com.example.myexcel.core.WorkbookType;
+import com.example.myexcel.core.container.Pair;
+import com.example.myexcel.core.parser.Table;
+import com.example.myexcel.core.parser.Title;
+import com.example.myexcel.core.parser.Tr;
+import com.example.myexcel.core.reflect.ClassFieldContainer;
+import com.example.myexcel.core.strategy.AutoWidthStrategy;
+import com.example.myexcel.core.strategy.WidthStrategy;
+import com.example.myexcel.utils.ReflectUtil;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import lombok.NonNull;

@@ -14,7 +14,8 @@
  */
 package com.example.myexcel.core.converter.reader;
 
-import com.cntaiping.tplhk.reins.common.excel.core.constant.Constants;
+
+import com.example.myexcel.core.constant.Constants;
 
 import java.lang.reflect.Field;
 import java.util.Objects;

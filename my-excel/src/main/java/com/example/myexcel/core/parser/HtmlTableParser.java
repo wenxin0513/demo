@@ -15,10 +15,10 @@
  */
 package com.example.myexcel.core.parser;
 
-import com.cntaiping.tplhk.reins.common.excel.core.constant.Constants;
-import com.cntaiping.tplhk.reins.common.excel.utils.RegexpUtil;
-import com.cntaiping.tplhk.reins.common.excel.utils.StyleUtil;
-import com.cntaiping.tplhk.reins.common.excel.utils.TdUtil;
+import com.example.myexcel.core.constant.Constants;
+import com.example.myexcel.utils.RegexpUtil;
+import com.example.myexcel.utils.StyleUtil;
+import com.example.myexcel.utils.TdUtil;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import lombok.extern.slf4j.Slf4j;

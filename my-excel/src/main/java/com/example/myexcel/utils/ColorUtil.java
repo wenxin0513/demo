@@ -14,7 +14,7 @@
  */
 package com.example.myexcel.utils;
 
-import com.cntaiping.tplhk.reins.common.excel.core.style.CustomColor;
+import com.example.myexcel.core.style.CustomColor;
 import lombok.NonNull;
 import lombok.experimental.UtilityClass;
 import org.apache.poi.hssf.usermodel.HSSFPalette;

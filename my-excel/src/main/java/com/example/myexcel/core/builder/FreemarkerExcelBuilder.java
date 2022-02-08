@@ -15,8 +15,8 @@
  */
 package com.example.myexcel.core.builder;
 
-import com.cntaiping.tplhk.reins.common.excel.core.strategy.WidthStrategy;
-import com.cntaiping.tplhk.reins.common.excel.exception.ExcelBuildException;
+import com.example.myexcel.core.strategy.WidthStrategy;
+import com.example.myexcel.exception.ExcelBuildException;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;

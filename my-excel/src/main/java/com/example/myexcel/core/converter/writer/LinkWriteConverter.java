@@ -15,12 +15,14 @@
 package com.example.myexcel.core.converter.writer;
 
 
-import com.cntaiping.tplhk.reins.common.excel.core.annotation.ExcelColumn;
-import com.cntaiping.tplhk.reins.common.excel.core.constant.LinkEmail;
-import com.cntaiping.tplhk.reins.common.excel.core.constant.LinkType;
-import com.cntaiping.tplhk.reins.common.excel.core.constant.LinkUrl;
-import com.cntaiping.tplhk.reins.common.excel.core.container.Pair;
-import com.cntaiping.tplhk.reins.common.excel.core.converter.WriteConverter;
+
+
+import com.example.myexcel.core.annotation.ExcelColumn;
+import com.example.myexcel.core.constant.LinkEmail;
+import com.example.myexcel.core.constant.LinkType;
+import com.example.myexcel.core.constant.LinkUrl;
+import com.example.myexcel.core.container.Pair;
+import com.example.myexcel.core.converter.WriteConverter;
 
 import java.lang.reflect.Field;
 

@@ -14,11 +14,11 @@
  */
 package com.example.myexcel.core.converter.writer;
 
-import com.cntaiping.tplhk.reins.common.excel.core.annotation.ExcelColumn;
-import com.cntaiping.tplhk.reins.common.excel.core.cache.Cache;
-import com.cntaiping.tplhk.reins.common.excel.core.cache.WeakCache;
-import com.cntaiping.tplhk.reins.common.excel.core.container.Pair;
-import com.cntaiping.tplhk.reins.common.excel.core.converter.WriteConverter;
+import com.example.myexcel.core.annotation.ExcelColumn;
+import com.example.myexcel.core.cache.Cache;
+import com.example.myexcel.core.cache.WeakCache;
+import com.example.myexcel.core.container.Pair;
+import com.example.myexcel.core.converter.WriteConverter;
 import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Field;

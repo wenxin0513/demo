@@ -14,13 +14,12 @@
  * limitations under the License.
  */
 package com.example.myexcel.core.annotation;
-
-import com.cntaiping.tplhk.reins.common.excel.core.constant.FileType;
-import com.cntaiping.tplhk.reins.common.excel.core.constant.LinkType;
-import com.cntaiping.tplhk.reins.common.excel.core.converter.ConverterProxy;
-import com.cntaiping.tplhk.reins.common.excel.core.converter.ExcelRepository;
-import com.cntaiping.tplhk.reins.common.excel.core.converter.ReadConverter;
-import com.cntaiping.tplhk.reins.common.excel.core.converter.WriteConverter;
+import com.example.myexcel.core.constant.FileType;
+import com.example.myexcel.core.constant.LinkType;
+import com.example.myexcel.core.converter.ConverterProxy;
+import com.example.myexcel.core.converter.ExcelRepository;
+import com.example.myexcel.core.converter.ReadConverter;
+import com.example.myexcel.core.converter.WriteConverter;
 
 import java.lang.annotation.*;
 

@@ -13,9 +13,7 @@
  * limitations under the License.
  */
 package com.example.myexcel.core;
-
-import com.cntaiping.tplhk.reins.common.excel.utils.TempFileOperator;
-
+import com.example.myexcel.utils.TempFileOperator;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;

@@ -15,10 +15,11 @@
  */
 package com.example.myexcel.core.builder;
 
-import com.cntaiping.tplhk.reins.common.excel.core.WorkbookType;
-import com.cntaiping.tplhk.reins.common.excel.core.parser.Title;
-import com.cntaiping.tplhk.reins.common.excel.core.strategy.AutoWidthStrategy;
-import com.cntaiping.tplhk.reins.common.excel.core.strategy.WidthStrategy;
+
+import com.example.myexcel.core.WorkbookType;
+import com.example.myexcel.core.parser.Title;
+import com.example.myexcel.core.strategy.AutoWidthStrategy;
+import com.example.myexcel.core.strategy.WidthStrategy;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.ss.usermodel.Workbook;

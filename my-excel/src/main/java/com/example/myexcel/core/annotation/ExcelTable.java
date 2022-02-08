@@ -15,7 +15,7 @@
  */
 package com.example.myexcel.core.annotation;
 
-import com.cntaiping.tplhk.reins.common.excel.core.WorkbookType;
+import com.example.myexcel.core.WorkbookType;
 
 import java.lang.annotation.*;
 

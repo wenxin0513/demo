@@ -14,9 +14,8 @@
  * limitations under the License.
  */
 package com.example.myexcel.core.builder;
-
-import com.cntaiping.tplhk.reins.common.excel.core.parser.*;
-import com.cntaiping.tplhk.reins.common.excel.core.strategy.WidthStrategy;
+import com.example.myexcel.core.parser.*;
+import com.example.myexcel.core.strategy.WidthStrategy;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.ss.usermodel.Sheet;

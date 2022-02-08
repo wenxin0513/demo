@@ -15,15 +15,16 @@
  */
 package com.example.myexcel.core.builder;
 
-import com.cntaiping.tplhk.reins.common.excel.core.FreezePane;
-import com.cntaiping.tplhk.reins.common.excel.core.WorkbookType;
-import com.cntaiping.tplhk.reins.common.excel.core.parser.ContentTypeEnum;
-import com.cntaiping.tplhk.reins.common.excel.core.parser.HtmlTableParser;
-import com.cntaiping.tplhk.reins.common.excel.core.parser.Td;
-import com.cntaiping.tplhk.reins.common.excel.core.parser.Tr;
-import com.cntaiping.tplhk.reins.common.excel.core.strategy.WidthStrategy;
-import com.cntaiping.tplhk.reins.common.excel.core.style.*;
-import com.cntaiping.tplhk.reins.common.excel.utils.TdUtil;
+import com.example.myexcel.core.FreezePane;
+import com.example.myexcel.core.WorkbookType;
+import com.example.myexcel.core.parser.ContentTypeEnum;
+import com.example.myexcel.core.parser.HtmlTableParser;
+import com.example.myexcel.core.parser.Td;
+import com.example.myexcel.core.parser.Tr;
+import com.example.myexcel.core.strategy.WidthStrategy;
+import com.example.myexcel.core.style.*;
+import com.example.myexcel.core.style.BorderStyle;
+import com.example.myexcel.utils.TdUtil;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import lombok.NonNull;

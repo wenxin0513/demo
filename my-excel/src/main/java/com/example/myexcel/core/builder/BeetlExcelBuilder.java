@@ -15,7 +15,8 @@
  */
 package com.example.myexcel.core.builder;
 
-import com.cntaiping.tplhk.reins.common.excel.core.strategy.WidthStrategy;
+
+import com.example.myexcel.core.strategy.WidthStrategy;
 import org.apache.commons.codec.CharEncoding;
 import org.beetl.core.Configuration;
 import org.beetl.core.GroupTemplate;
@@ -54,6 +55,7 @@ public class BeetlExcelBuilder extends AbstractExcelBuilder {
     public BeetlExcelBuilder() {
         widthStrategy(WidthStrategy.AUTO_WIDTH);
     }
+
 
     @Override
     public ExcelBuilder template(String path) {

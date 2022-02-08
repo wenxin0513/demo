@@ -1,6 +1,5 @@
 package com.example.myexcel.core.parser;
-
-import com.cntaiping.tplhk.reins.common.core.util.ApplicationUtil;
+import com.example.myexcel.utils.ApplicationUtil;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Data;

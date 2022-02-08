@@ -14,8 +14,8 @@
  */
 package com.example.myexcel.core.builder;
 
-import com.cntaiping.tplhk.reins.common.excel.core.constant.Constants;
-import com.cntaiping.tplhk.reins.common.excel.core.strategy.WidthStrategy;
+import com.example.myexcel.core.constant.Constants;
+import com.example.myexcel.core.strategy.WidthStrategy;
 import lombok.extern.slf4j.Slf4j;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
